@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite';
+import createExternal from 'vite-plugin-external';
 
 export default defineConfig({
-    build: {
-        rollupOptions: {
-            external: ['d3'],
-        },
-    },
-});
+    plugins: [
+      createExternal({
+        externals: {
+          react: 'd3'
+        }
+      })
+    ]
+  });
