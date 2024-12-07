@@ -1,0 +1,16 @@
+<!--<div class="topnav">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/summary">Summary</a>
+  <a href="/reports">Reports</a>
+  <a href="#" (click)="onLogout()">Logout</a>
+</div>-->
+
+
+<div class="topnav">
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/summary" routerLinkActive="active">Summary</a>
+  <a routerLink="/reports" routerLinkActive="active">Reports</a>
+  <a (click)="onLogout()">Logout</a>
+</div>
+
+
