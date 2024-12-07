@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { DataService } from '../data.service';
 import * as d3 from 'd3';
 
+
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',
